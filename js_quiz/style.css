@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9a9a9a;
+}
+
+#questionNumber {
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#score{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: none;
+}
+
+#emoji {
+    font-size: 50px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    display: none;
+}
+
+#time {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 40px;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    display: none;
+}
+
+#correct {
+    background-color: rgb(10, 88, 3);
+    border-radius: 50%;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.start-quiz {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(61, 206, 134);
+}
+
+.start-quiz:active {
+    font-size: 45px;
+}
+
+.quiz-container {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.question {
+    width: 500px;
+    padding: 50px;
+    height: 450px;
+}
+
+.questionText {
+    text-align: center;
+    font-size: 30px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.questionAnswers {
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.questionAnswers li {
+    padding: 10px;
+}
+
+.submit {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #166141;
+    color: #fff;
+    display: none;
+}
+
+.submit:active {
+    font-size: 28px;
+    transition: .2s ease all;
+}
+
+input {
+    cursor: pointer;
+    outline: none;
+}
+
+label {
+    cursor: pointer;
+}
